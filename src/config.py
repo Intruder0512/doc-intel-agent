@@ -1,0 +1,28 @@
+import os
+
+PROJECT_ID = "doc-intel-agent"
+PROJECT_NUMBER = "989026424310"
+REGION = "us-central1"
+
+BUCKET_NAME = "doc-intel-agent-docs"
+
+DOCAI_PROCESSOR_ID = "c6aab4ac9b0ba546"
+DOCAI_LOCATION = "us"
+DOCAI_PROCESSOR_PATH = f"projects/{PROJECT_NUMBER}/locations/{DOCAI_LOCATION}/processors/{DOCAI_PROCESSOR_ID}"
+
+EMBEDDING_MODEL = "text-embedding-005"
+GENERATION_MODEL = "gemini-2.5-flash"
+
+VECTOR_INDEX_DISPLAY_NAME = "doc-intel-index"
+VECTOR_DIMENSIONS = 768
+
+BIGQUERY_DATASET = "doc_intel_logs"
+BIGQUERY_TABLE = "query_log"
+
+CREDENTIALS_PATH = os.path.expanduser("~/doc-intel-sa-key.json")
+
+VECTOR_INDEX_ID = "9114131158588719104"
+VECTOR_INDEX_RESOURCE_NAME = f"projects/{PROJECT_NUMBER}/locations/{REGION}/indexes/{VECTOR_INDEX_ID}"
+VECTOR_INDEX_ENDPOINT_ID = "1269036529569759232"
+VECTOR_INDEX_ENDPOINT_RESOURCE_NAME = f"projects/{PROJECT_NUMBER}/locations/{REGION}/indexEndpoints/{VECTOR_INDEX_ENDPOINT_ID}"
+DEPLOYED_INDEX_ID = "doc_intel_deployed_v1"

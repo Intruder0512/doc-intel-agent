@@ -1,0 +1,7 @@
+functions-framework==3.*
+google-cloud-documentai
+google-cloud-storage
+google-cloud-aiplatform
+google-cloud-firestore
+pypdf
+streamlit
